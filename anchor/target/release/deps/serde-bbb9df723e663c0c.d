@@ -1,0 +1,14 @@
+/Users/megatopia/Downloads/megagram (1)/anchor/target/release/deps/serde-bbb9df723e663c0c.d: /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/megatopia/Downloads/megagram\ (1)/anchor/target/release/build/serde-dda1ac8c48096525/out/private.rs
+
+/Users/megatopia/Downloads/megagram (1)/anchor/target/release/deps/libserde-bbb9df723e663c0c.rlib: /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/megatopia/Downloads/megagram\ (1)/anchor/target/release/build/serde-dda1ac8c48096525/out/private.rs
+
+/Users/megatopia/Downloads/megagram (1)/anchor/target/release/deps/libserde-bbb9df723e663c0c.rmeta: /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/megatopia/Downloads/megagram\ (1)/anchor/target/release/build/serde-dda1ac8c48096525/out/private.rs
+
+/Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/megatopia/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/megatopia/Downloads/megagram\ (1)/anchor/target/release/build/serde-dda1ac8c48096525/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/megatopia/Downloads/megagram (1)/anchor/target/release/build/serde-dda1ac8c48096525/out

@@ -1,0 +1,118 @@
+{
+  "version": "0.1.0",
+  "name": "megagram",
+  "instructions": [
+    {
+      "name": "setUsername",
+      "accounts": [
+        { "name": "userProfile", "isMut": true, "isSigner": false },
+        { "name": "user", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [
+        { "name": "username", "type": "string" }
+      ]
+    },
+    {
+      "name": "createPost",
+      "accounts": [
+        { "name": "post", "isMut": true, "isSigner": false },
+        { "name": "userProfile", "isMut": true, "isSigner": false },
+        { "name": "author", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [
+        { "name": "content", "type": "string" }
+      ]
+    },
+    {
+      "name": "likePost",
+      "accounts": [
+        { "name": "like", "isMut": true, "isSigner": false },
+        { "name": "post", "isMut": true, "isSigner": false },
+        { "name": "liker", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": []
+    },
+    {
+      "name": "addComment",
+      "accounts": [
+        { "name": "comment", "isMut": true, "isSigner": false },
+        { "name": "post", "isMut": true, "isSigner": false },
+        { "name": "userProfile", "isMut": true, "isSigner": false },
+        { "name": "author", "isMut": true, "isSigner": true },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [
+        { "name": "content", "type": "string" }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "UserProfile",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          { "name": "owner", "type": "publicKey" },
+          { "name": "username", "type": "string" },
+          { "name": "postCount", "type": "u64" },
+          { "name": "createdAt", "type": "i64" }
+        ]
+      }
+    },
+    {
+      "name": "Post",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          { "name": "author", "type": "publicKey" },
+          { "name": "username", "type": "string" },
+          { "name": "content", "type": "string" },
+          { "name": "likeCount", "type": "u64" },
+          { "name": "commentCount", "type": "u64" },
+          { "name": "createdAt", "type": "i64" },
+          { "name": "bump", "type": "u8" }
+        ]
+      }
+    },
+    {
+      "name": "Like",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          { "name": "liker", "type": "publicKey" },
+          { "name": "post", "type": "publicKey" },
+          { "name": "createdAt", "type": "i64" }
+        ]
+      }
+    },
+    {
+      "name": "Comment",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          { "name": "author", "type": "publicKey" },
+          { "name": "username", "type": "string" },
+          { "name": "post", "type": "publicKey" },
+          { "name": "content", "type": "string" },
+          { "name": "createdAt", "type": "i64" }
+        ]
+      }
+    }
+  ],
+  "errors": [
+    { "code": 6000, "name": "UsernameTooShort", "msg": "Username must be at least 2 characters" },
+    { "code": 6001, "name": "UsernameTooLong", "msg": "Username must be at most 32 characters" },
+    { "code": 6002, "name": "UsernameInvalidChars", "msg": "Username can only contain letters, numbers, and underscores" },
+    { "code": 6003, "name": "PostEmpty", "msg": "Post cannot be empty" },
+    { "code": 6004, "name": "PostTooLong", "msg": "Post cannot exceed 280 characters" },
+    { "code": 6005, "name": "CommentEmpty", "msg": "Comment cannot be empty" },
+    { "code": 6006, "name": "CommentTooLong", "msg": "Comment cannot exceed 280 characters" },
+    { "code": 6007, "name": "NotOwner", "msg": "You are not the owner of this profile" }
+  ],
+  "metadata": {
+    "address": "6YrK9zX5BdiYFpYRm16AA6vaUmFgaUKaEs3Ut7dWzSPX"
+  }
+}
