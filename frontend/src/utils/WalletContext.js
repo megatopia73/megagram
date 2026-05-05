@@ -4,7 +4,7 @@ import { AnchorProvider, Program } from "@coral-xyz/anchor";
 import idl from "../idl/megagram.json";
 
 const PROGRAM_ID = new PublicKey("6YrK9zX5BdiYFpYRm16AA6vaUmFgaUKaEs3Ut7dWzSPX");
-const NETWORK = "http://127.0.0.1:8899"; // localnet
+const NETWORK = "https://api.devnet.solana.com";  // localnet
 
 const WalletContext = createContext(null);
 

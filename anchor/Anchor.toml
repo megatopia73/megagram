@@ -13,7 +13,7 @@ megagram = "6YrK9zX5BdiYFpYRm16AA6vaUmFgaUKaEs3Ut7dWzSPX"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "Devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
